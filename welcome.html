@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daraz Picks</title>
+    <style>
+        /* Clean, modern aesthetic */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f4f4f7;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* The Grid System */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        /* Product Card Styling */
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .product-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 15px 0;
+            line-height: 1.4;
+        }
+
+        /* Daraz-style Orange Button */
+        .affiliate-link {
+            display: block;
+            text-align: center;
+            background-color: #f57224; /* Daraz Orange */
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            margin-top: auto;
+        }
+
+        .affiliate-link:hover {
+            background-color: #d65a1e;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Recommended Products</h1>
+        <p>Curated high-quality items from Daraz</p>
+    </header>
+
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product Name" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Product Name 1</h2>
+                <a href="YOUR_AFFILIATE_LINK_HERE" target="_blank" class="affiliate-link">View on Daraz</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product Name" class="product-image">
+            <div class="product-info">
+                <h2 class="product-name">Product Name 2</h2>
+                <a href="#" target="_blank" class="affiliate-link">View on Daraz</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
